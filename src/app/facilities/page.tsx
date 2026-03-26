@@ -84,8 +84,8 @@ const safetyFeatures = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" />
       </svg>
     ),
-    title: "AC Classrooms",
-    description: "Temperature-controlled, well-ventilated classrooms ensuring comfort in all seasons.",
+    title: "Well-Ventilated Classrooms",
+    description: "Bright, airy, well-ventilated classrooms designed for comfort and a healthy learning environment.",
   },
   {
     icon: (
@@ -99,11 +99,9 @@ const safetyFeatures = [
 ];
 
 const additionalFacilities = [
-  "Fresh cooked nutritious meals daily",
   "Transport facility (pick-up & drop-off)",
   "Indoor & outdoor play spaces",
-  "Dedicated nap rooms for daycare children",
-  "Massage and bathing services for toddlers",
+  "Dedicated nap rooms for daycare children (coming soon)",
   "Spacious parking area for parents",
 ];
 

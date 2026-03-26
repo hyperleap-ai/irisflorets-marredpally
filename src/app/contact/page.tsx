@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Iris Florets Marredpally. Visit us at West Marredpally, Hyderabad or call +91 91540 77002.",
+    "Get in touch with Iris Florets Marredpally. Visit us at Marredpally, Hyderabad or call +91 88867 07373.",
 };
 
 const contactInfo = [
@@ -25,8 +25,8 @@ const contactInfo = [
       </svg>
     ),
     label: "Phone",
-    value: "+91 91540 77002",
-    href: "tel:+919154077002",
+    value: "+91 88867 07373",
+    href: "tel:+918886707373",
   },
   {
     icon: (
@@ -45,8 +45,8 @@ const contactInfo = [
       </svg>
     ),
     label: "Email",
-    value: "westmarredpally@irisflorets.com",
-    href: "mailto:westmarredpally@irisflorets.com",
+    value: "marredpally@irisflorets.com",
+    href: "mailto:marredpally@irisflorets.com",
   },
 ];
 

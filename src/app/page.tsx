@@ -31,7 +31,7 @@ const pillars = [
 const programs = [
   {
     name: "Toddlers",
-    ages: "1.5 – 2 years",
+    ages: "2 years",
     color: "bg-purple/5 text-purple border-purple/20",
     description: "Gentle introduction to social play and sensory exploration in a safe, nurturing environment.",
   },
@@ -55,7 +55,7 @@ const programs = [
   },
   {
     name: "Daycare",
-    ages: "1 – 5.5 years",
+    ages: "2 – 8 years",
     color: "bg-sage/15 text-purple-dark border-sage/30",
     description: "Full-day care with meals, nap time, activities, and learning — flexible options available.",
   },
@@ -106,7 +106,7 @@ export default function Home() {
               <p className="mt-5 max-w-lg text-lg leading-relaxed text-white/85">
                 Iris Florets Marredpally — where every child enters with a smile
                 and walks out with giggles. Award-winning preschool &amp; daycare
-                for ages 1.5 to 5.5 years.
+                for ages 2 to 8 years.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
@@ -350,13 +350,13 @@ export default function Home() {
               Apply Now
             </Link>
             <a
-              href="tel:+919154077002"
+              href="tel:+918886707373"
               className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-purple-dark/30 px-7 py-3 text-base font-bold text-purple-dark transition-all hover:border-purple-dark hover:bg-purple-dark/5"
             >
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              Call +91 91540 77002
+              Call +91 88867 07373
             </a>
           </div>
         </div>

@@ -8,11 +8,6 @@ export const metadata: Metadata = {
 
 const fees = [
   { item: "Admission Fee", amount: "₹5,000", note: "One-time" },
-  { item: "Monthly Tuition", amount: "₹3,750", note: "Per month" },
-  { item: "Annual Tuition", amount: "₹45,000", note: "Per year" },
-  { item: "Daycare (Annual)", amount: "₹15,000", note: "Per year" },
-  { item: "Transport", amount: "₹24,000", note: "Per year" },
-  { item: "Other Charges", amount: "₹7,000", note: "Annual" },
 ];
 
 const steps = [
@@ -43,11 +38,13 @@ const steps = [
 ];
 
 const eligibility = [
-  { program: "Toddlers", age: "1.5 – 2 years" },
-  { program: "Nursery", age: "2.5 – 3 years" },
-  { program: "Junior KG", age: "3.5 – 4 years" },
-  { program: "Senior KG", age: "4.5 – 5 years" },
-  { program: "Daycare", age: "1 – 5.5 years" },
+  { program: "Toddlers", age: "2 years (age completed on or before 1st April)" },
+  { program: "Nursery", age: "3 years (age completed on or before 1st April)" },
+  { program: "Junior KG", age: "4 years (age completed on or before 1st April)" },
+  { program: "Senior KG", age: "5 years (age completed on or before 1st April)" },
+  { program: "Grade 1", age: "6 years (age completed on or before 1st April)" },
+  { program: "Grade 2", age: "7 years (age completed on or before 1st April)" },
+  { program: "Daycare", age: "2 – 8 years" },
 ];
 
 function EnquiryForm() {
@@ -102,12 +99,13 @@ function EnquiryForm() {
             className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-purple focus:ring-1 focus:ring-purple"
           >
             <option value="">Select age</option>
-            <option value="1-1.5">1 – 1.5 years</option>
-            <option value="1.5-2">1.5 – 2 years</option>
-            <option value="2-3">2 – 3 years</option>
-            <option value="3-4">3 – 4 years</option>
-            <option value="4-5">4 – 5 years</option>
-            <option value="5+">5+ years</option>
+            <option value="2">2 years</option>
+            <option value="3">3 years</option>
+            <option value="4">4 years</option>
+            <option value="5">5 years</option>
+            <option value="6">6 years</option>
+            <option value="7">7 years</option>
+            <option value="8">8 years</option>
           </select>
         </div>
         <div>
@@ -127,6 +125,8 @@ function EnquiryForm() {
             <option value="nursery">Nursery</option>
             <option value="junior-kg">Junior KG</option>
             <option value="senior-kg">Senior KG</option>
+            <option value="grade-1">Grade 1</option>
+            <option value="grade-2">Grade 2</option>
             <option value="daycare">Daycare</option>
           </select>
         </div>
@@ -277,7 +277,7 @@ export default function AdmissionsPage() {
                 Fee Structure
               </h2>
               <p className="mt-2 text-sm text-text-light">
-                Transparent pricing. Contact us for payment plan options.
+                Please contact us directly for complete fee details and payment plan options.
               </p>
               <div className="mt-6 overflow-hidden rounded-xl bg-white shadow-sm">
                 <table className="w-full text-left text-sm">
@@ -326,10 +326,10 @@ export default function AdmissionsPage() {
               Fill out the form and we&apos;ll get back to you within 24 hours.
               Or call us directly at{" "}
               <a
-                href="tel:+919154077002"
+                href="tel:+918886707373"
                 className="font-semibold text-purple hover:underline"
               >
-                +91 91540 77002
+                +91 88867 07373
               </a>
               .
             </p>
@@ -348,7 +348,7 @@ export default function AdmissionsPage() {
           </p>
           <div className="mt-4 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="tel:+919154077002"
+              href="tel:+918886707373"
               className="inline-flex items-center gap-2 rounded-full bg-white/15 px-6 py-2.5 text-sm font-bold text-white backdrop-blur-sm transition-colors hover:bg-white/25"
             >
               <svg
@@ -364,10 +364,10 @@ export default function AdmissionsPage() {
                   d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                 />
               </svg>
-              +91 91540 77002
+              +91 88867 07373
             </a>
             <a
-              href="mailto:westmarredpally@irisflorets.com"
+              href="mailto:marredpally@irisflorets.com"
               className="inline-flex items-center gap-2 rounded-full bg-white/15 px-6 py-2.5 text-sm font-bold text-white backdrop-blur-sm transition-colors hover:bg-white/25"
             >
               <svg
@@ -383,7 +383,7 @@ export default function AdmissionsPage() {
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              westmarredpally@irisflorets.com
+              marredpally@irisflorets.com
             </a>
           </div>
         </div>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const programs = [
   {
     name: "Toddlers",
-    ages: "1.5 – 2 years",
+    ages: "2 years",
     accent: "border-l-purple bg-purple/5",
     details: [
       "Gentle introduction to a structured environment",
@@ -58,8 +58,32 @@ const programs = [
     ],
   },
   {
+    name: "Grade 1",
+    ages: "6 years",
+    accent: "border-l-peach bg-peach/10",
+    details: [
+      "Transition from KG to formal schooling",
+      "Reading and writing with growing fluency",
+      "Math — addition, subtraction, and number concepts",
+      "Environmental studies and basic science",
+      "Creative arts, music, and physical education",
+    ],
+  },
+  {
+    name: "Grade 2",
+    ages: "7 years",
+    accent: "border-l-orange bg-orange/5",
+    details: [
+      "Advanced reading comprehension and writing",
+      "Math — multiplication, division, and word problems",
+      "Introduction to social studies and science concepts",
+      "Critical thinking and collaborative projects",
+      "Public speaking and presentation skills",
+    ],
+  },
+  {
     name: "Daycare",
-    ages: "1 – 5.5 years",
+    ages: "2 – 8 years",
     accent: "border-l-sage bg-sage/10",
     details: [
       "Full-time, half-time, flexible, and hourly options",
@@ -71,7 +95,7 @@ const programs = [
   },
   {
     name: "After School & Activity Club",
-    ages: "2 – 5.5 years",
+    ages: "2 – 8 years",
     accent: "border-l-peach bg-peach/10",
     details: [
       "Art & craft workshops",

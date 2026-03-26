@@ -10,10 +10,12 @@ const quickLinks = [
 ];
 
 const programs = [
-  "Toddlers (1.5–2 yrs)",
+  "Toddlers (2 yrs)",
   "Nursery (3 yrs)",
   "Junior KG (4 yrs)",
   "Senior KG (5 yrs)",
+  "Grade 1 (6 yrs)",
+  "Grade 2 (7 yrs)",
   "Daycare",
 ];
 
@@ -109,16 +111,16 @@ export default function Footer() {
                 Hyderabad, Telangana 500026
               </p>
               <p>
-                <a href="tel:+919154077002" className="hover:text-white">
-                  +91 91540 77002
+                <a href="tel:+918886707373" className="hover:text-white">
+                  +91 88867 07373
                 </a>
               </p>
               <p>
                 <a
-                  href="mailto:westmarredpally@irisflorets.com"
+                  href="mailto:marredpally@irisflorets.com"
                   className="hover:text-white"
                 >
-                  westmarredpally@irisflorets.com
+                  marredpally@irisflorets.com
                 </a>
               </p>
               <p>
