@@ -87,7 +87,7 @@ const programs = [
     accent: "border-l-sage bg-sage/10",
     details: [
       "Full-time, half-time, flexible, and hourly options",
-      "Freshly cooked nutritious meals and snacks",
+      "Healthy snacks provided during daycare hours",
       "Supervised nap and rest time",
       "Age-appropriate activities and free play",
       "Live parent app for real-time updates",
@@ -103,6 +103,7 @@ const programs = [
       "Story-telling and puppet theatre",
       "Yoga and mindfulness for little ones",
       "Seasonal and festival-themed activities",
+      "Karate and Skating classes included at no additional cost",
     ],
   },
 ];

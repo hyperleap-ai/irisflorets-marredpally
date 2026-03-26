@@ -124,9 +124,11 @@ export default function Footer() {
                 </a>
               </p>
               <p>
-                Preschool: Mon–Fri, 9:30 AM – 12:30 PM
+                Tots & Nursery: 9:30 AM – 12:45 PM
                 <br />
-                Daycare: Mon–Sat, 9:00 AM – 6:30 PM
+                Jr KG to Grade 2: 9:30 AM – 3:00 PM
+                <br />
+                Daycare: 9:00 AM – 5:00 PM
               </p>
             </address>
           </div>

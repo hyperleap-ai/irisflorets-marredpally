@@ -51,9 +51,9 @@ const contactInfo = [
 ];
 
 const hours = [
-  { label: "Preschool", time: "Mon – Fri, 9:30 AM – 12:30 PM" },
-  { label: "Daycare", time: "Mon – Sat, 9:00 AM – 6:30 PM" },
-  { label: "Office Hours", time: "Mon – Sat, 9:00 AM – 5:00 PM" },
+  { label: "Tots & Nursery", time: "9:30 AM – 12:45 PM" },
+  { label: "Junior KG to Grade 2", time: "9:30 AM – 3:00 PM" },
+  { label: "Daycare", time: "9:00 AM – 5:00 PM" },
 ];
 
 export default function ContactPage() {
