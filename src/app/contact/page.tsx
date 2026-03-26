@@ -60,7 +60,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-teal to-teal-dark py-16 sm:py-20">
+      <section className="bg-gradient-to-br from-purple to-purple-dark py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
             Contact Us
@@ -84,7 +84,7 @@ export default function ContactPage() {
               <div className="mt-8 space-y-6">
                 {contactInfo.map((info) => (
                   <div key={info.label} className="flex gap-4">
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-purple/10 text-purple">
                       {info.icon}
                     </div>
                     <div>
@@ -99,7 +99,7 @@ export default function ContactPage() {
                             ? "noopener noreferrer"
                             : undefined
                         }
-                        className="mt-0.5 text-sm font-medium text-text hover:text-teal"
+                        className="mt-0.5 text-sm font-medium text-text hover:text-purple"
                       >
                         {info.value}
                       </a>
@@ -134,7 +134,7 @@ export default function ContactPage() {
                     href="https://www.facebook.com/irisfloretsmarredpally/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-teal/10 text-teal transition-colors hover:bg-teal hover:text-white"
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-purple/10 text-purple transition-colors hover:bg-purple hover:text-white"
                     aria-label="Facebook"
                   >
                     <svg
@@ -149,7 +149,7 @@ export default function ContactPage() {
                     href="https://www.instagram.com/irisflorets/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-teal/10 text-teal transition-colors hover:bg-teal hover:text-white"
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-purple/10 text-purple transition-colors hover:bg-purple hover:text-white"
                     aria-label="Instagram"
                   >
                     <svg
@@ -183,7 +183,7 @@ export default function ContactPage() {
                       id="name"
                       name="name"
                       required
-                      className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-teal focus:ring-1 focus:ring-teal"
+                      className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-purple focus:ring-1 focus:ring-purple"
                       placeholder="Full name"
                     />
                   </div>
@@ -199,7 +199,7 @@ export default function ContactPage() {
                       id="contactPhone"
                       name="phone"
                       required
-                      className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-teal focus:ring-1 focus:ring-teal"
+                      className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-purple focus:ring-1 focus:ring-purple"
                       placeholder="+91 XXXXX XXXXX"
                     />
                   </div>
@@ -215,7 +215,7 @@ export default function ContactPage() {
                     type="email"
                     id="contactEmail"
                     name="email"
-                    className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-teal focus:ring-1 focus:ring-teal"
+                    className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-purple focus:ring-1 focus:ring-purple"
                     placeholder="you@example.com"
                   />
                 </div>
@@ -230,7 +230,7 @@ export default function ContactPage() {
                     type="text"
                     id="subject"
                     name="subject"
-                    className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-teal focus:ring-1 focus:ring-teal"
+                    className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-purple focus:ring-1 focus:ring-purple"
                     placeholder="How can we help?"
                   />
                 </div>
@@ -246,13 +246,13 @@ export default function ContactPage() {
                     name="message"
                     rows={4}
                     required
-                    className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-teal focus:ring-1 focus:ring-teal"
+                    className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-purple focus:ring-1 focus:ring-purple"
                     placeholder="Your message..."
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full rounded-full bg-teal px-7 py-3 text-base font-bold text-white transition-all hover:bg-teal-dark hover:shadow-lg sm:w-auto"
+                  className="w-full rounded-full bg-purple px-7 py-3 text-base font-bold text-white transition-all hover:bg-purple-dark hover:shadow-lg sm:w-auto"
                 >
                   Send Message
                 </button>

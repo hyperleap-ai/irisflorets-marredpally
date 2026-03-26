@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const quickLinks = [
@@ -18,24 +19,18 @@ const programs = [
 
 export default function Footer() {
   return (
-    <footer className="bg-teal-dark text-white">
+    <footer className="bg-purple-dark text-white">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-teal font-bold text-sm">
-                IF
-              </div>
-              <div>
-                <span className="block text-lg font-extrabold">
-                  Iris Florets
-                </span>
-                <span className="block text-[10px] font-medium tracking-wider uppercase text-white/70">
-                  Marredpally
-                </span>
-              </div>
-            </div>
+            <Image
+              src="/images/logos/iris-logo-white.png"
+              alt="Iris Florets"
+              width={150}
+              height={45}
+              className="h-10 w-auto"
+            />
             <p className="mt-4 text-sm leading-relaxed text-white/80">
               A BITS Pilani &amp; IIM Alumni Initiative. Nurturing young minds
               with love, safety, and joyful learning since 2017.

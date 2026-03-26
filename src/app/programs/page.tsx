@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -11,7 +12,7 @@ const programs = [
   {
     name: "Toddlers",
     ages: "1.5 – 2 years",
-    accent: "border-l-pink-400 bg-pink-50",
+    accent: "border-l-purple bg-purple/5",
     details: [
       "Gentle introduction to a structured environment",
       "Sensory play and motor skill development",
@@ -23,7 +24,7 @@ const programs = [
   {
     name: "Nursery",
     ages: "3 years",
-    accent: "border-l-sky-400 bg-sky-50",
+    accent: "border-l-blue bg-blue/5",
     details: [
       "Pre-reading skills — phonics awareness and letter recognition",
       "Pre-writing through tracing, drawing, and fine motor activities",
@@ -35,7 +36,7 @@ const programs = [
   {
     name: "Junior KG",
     ages: "4 years",
-    accent: "border-l-emerald-400 bg-emerald-50",
+    accent: "border-l-purple-muted bg-purple-muted/5",
     details: [
       "Reading readiness — blending sounds, sight words",
       "Writing practice — alphabets, numbers, simple words",
@@ -47,7 +48,7 @@ const programs = [
   {
     name: "Senior KG",
     ages: "5 years",
-    accent: "border-l-amber-400 bg-amber-50",
+    accent: "border-l-orange bg-orange/5",
     details: [
       "School-readiness programme with structured learning",
       "Fluent reading and creative writing exercises",
@@ -59,7 +60,7 @@ const programs = [
   {
     name: "Daycare",
     ages: "1 – 5.5 years",
-    accent: "border-l-purple-400 bg-purple-50",
+    accent: "border-l-sage bg-sage/10",
     details: [
       "Full-time, half-time, flexible, and hourly options",
       "Freshly cooked nutritious meals and snacks",
@@ -71,7 +72,7 @@ const programs = [
   {
     name: "After School & Activity Club",
     ages: "2 – 5.5 years",
-    accent: "border-l-teal bg-teal/5",
+    accent: "border-l-peach bg-peach/10",
     details: [
       "Art & craft workshops",
       "Dance, music, and movement sessions",
@@ -117,7 +118,7 @@ export default function ProgramsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-teal to-teal-dark py-16 sm:py-20">
+      <section className="bg-gradient-to-br from-purple to-purple-dark py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
             Our Programs
@@ -140,7 +141,7 @@ export default function ProgramsPage() {
                 className={`rounded-2xl border-l-4 p-6 sm:p-8 ${program.accent}`}
               >
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-4">
-                  <h2 className="text-2xl font-extrabold text-text">
+                  <h2 className="text-2xl font-extrabold text-purple-dark">
                     {program.name}
                   </h2>
                   <span className="text-sm font-semibold text-text-light">
@@ -154,7 +155,7 @@ export default function ProgramsPage() {
                       className="flex items-start gap-2 text-sm text-text-light"
                     >
                       <svg
-                        className="mt-0.5 h-4 w-4 shrink-0 text-teal"
+                        className="mt-0.5 h-4 w-4 shrink-0 text-purple"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -176,11 +177,36 @@ export default function ProgramsPage() {
         </div>
       </section>
 
+      {/* Finland Math Partnership */}
+      <section className="bg-blue/5 py-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center gap-6 sm:flex-row sm:gap-10">
+            <Image
+              src="/images/finland-math.png"
+              alt="Eduten Finland Math Partnership"
+              width={200}
+              height={80}
+              className="h-16 w-auto"
+            />
+            <div>
+              <h3 className="text-lg font-bold text-purple-dark">
+                Powered by Eduten Finland Math
+              </h3>
+              <p className="mt-1 text-sm text-text-light">
+                AI-driven math learning developed by researchers at the
+                University of Turku, Finland. Proven to improve learning
+                outcomes by 45%.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Iris 7 Petals Curriculum */}
-      <section className="bg-warm-gray py-16 sm:py-20">
+      <section className="bg-cream py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-text sm:text-4xl">
+            <h2 className="text-3xl font-extrabold text-purple-dark sm:text-4xl">
               The Iris 7 Petals Curriculum
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-text-light">
@@ -195,10 +221,10 @@ export default function ProgramsPage() {
                 key={petal.name}
                 className="rounded-2xl bg-white p-5 shadow-sm transition-shadow hover:shadow-md"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-purple text-sm font-bold text-white">
                   {i + 1}
                 </div>
-                <h3 className="mt-3 text-lg font-bold text-text">
+                <h3 className="mt-3 text-lg font-bold text-purple-dark">
                   {petal.name}
                 </h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-text-light">
@@ -211,7 +237,7 @@ export default function ProgramsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-teal py-12 text-center">
+      <section className="bg-purple py-12 text-center">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
             Ready to give your child the best start?
@@ -222,7 +248,7 @@ export default function ProgramsPage() {
           </p>
           <Link
             href="/admissions"
-            className="mt-6 inline-flex items-center justify-center rounded-full bg-orange px-7 py-3 text-base font-bold text-white transition-all hover:bg-orange-light hover:shadow-lg"
+            className="mt-6 inline-flex items-center justify-center rounded-full bg-orange px-7 py-3 text-base font-bold text-purple-dark transition-all hover:bg-orange-light hover:shadow-lg"
           >
             Enquire Now
           </Link>

@@ -66,7 +66,7 @@ function EnquiryForm() {
             id="parentName"
             name="parentName"
             required
-            className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-teal focus:ring-1 focus:ring-teal"
+            className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-purple focus:ring-1 focus:ring-purple"
             placeholder="Your full name"
           />
         </div>
@@ -82,7 +82,7 @@ function EnquiryForm() {
             id="childName"
             name="childName"
             required
-            className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-teal focus:ring-1 focus:ring-teal"
+            className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-purple focus:ring-1 focus:ring-purple"
             placeholder="Your child's name"
           />
         </div>
@@ -99,7 +99,7 @@ function EnquiryForm() {
             id="childAge"
             name="childAge"
             required
-            className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-teal focus:ring-1 focus:ring-teal"
+            className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-purple focus:ring-1 focus:ring-purple"
           >
             <option value="">Select age</option>
             <option value="1-1.5">1 – 1.5 years</option>
@@ -120,7 +120,7 @@ function EnquiryForm() {
           <select
             id="program"
             name="program"
-            className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-teal focus:ring-1 focus:ring-teal"
+            className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-purple focus:ring-1 focus:ring-purple"
           >
             <option value="">Select program</option>
             <option value="toddlers">Toddlers</option>
@@ -144,7 +144,7 @@ function EnquiryForm() {
             id="phone"
             name="phone"
             required
-            className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-teal focus:ring-1 focus:ring-teal"
+            className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-purple focus:ring-1 focus:ring-purple"
             placeholder="+91 XXXXX XXXXX"
           />
         </div>
@@ -159,7 +159,7 @@ function EnquiryForm() {
             type="email"
             id="email"
             name="email"
-            className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-teal focus:ring-1 focus:ring-teal"
+            className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-purple focus:ring-1 focus:ring-purple"
             placeholder="you@example.com"
           />
         </div>
@@ -175,7 +175,7 @@ function EnquiryForm() {
           id="message"
           name="message"
           rows={3}
-          className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-teal focus:ring-1 focus:ring-teal"
+          className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm text-text outline-none transition-colors focus:border-purple focus:ring-1 focus:ring-purple"
           placeholder="Any questions or specific requirements..."
         />
       </div>
@@ -193,7 +193,7 @@ export default function AdmissionsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-teal to-teal-dark py-16 sm:py-20">
+      <section className="bg-gradient-to-br from-purple to-purple-dark py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="inline-block rounded-full bg-orange px-5 py-1.5 text-sm font-bold text-white">
             Admissions Open 2026–27
@@ -217,7 +217,7 @@ export default function AdmissionsPage() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((s) => (
               <div key={s.step} className="relative text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-teal text-xl font-extrabold text-white">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-purple text-xl font-extrabold text-white">
                   {s.step}
                 </div>
                 <h3 className="mt-4 text-lg font-bold text-text">{s.title}</h3>
@@ -245,7 +245,7 @@ export default function AdmissionsPage() {
               <div className="mt-6 overflow-hidden rounded-xl bg-white shadow-sm">
                 <table className="w-full text-left text-sm">
                   <thead>
-                    <tr className="border-b border-gray-100 bg-teal/5">
+                    <tr className="border-b border-gray-100 bg-purple/5">
                       <th className="px-5 py-3 font-bold text-text">
                         Program
                       </th>
@@ -299,7 +299,7 @@ export default function AdmissionsPage() {
                         <td className="px-5 py-3 font-medium text-text">
                           {fee.item}
                         </td>
-                        <td className="px-5 py-3 font-semibold text-teal">
+                        <td className="px-5 py-3 font-semibold text-purple">
                           {fee.amount}
                         </td>
                         <td className="px-5 py-3 text-text-light">
@@ -327,7 +327,7 @@ export default function AdmissionsPage() {
               Or call us directly at{" "}
               <a
                 href="tel:+919154077002"
-                className="font-semibold text-teal hover:underline"
+                className="font-semibold text-purple hover:underline"
               >
                 +91 91540 77002
               </a>
@@ -341,7 +341,7 @@ export default function AdmissionsPage() {
       </section>
 
       {/* Quick Contact Strip */}
-      <section className="bg-teal py-10 text-center">
+      <section className="bg-purple py-10 text-center">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-lg font-bold text-white">
             Have questions? We&apos;re here to help.

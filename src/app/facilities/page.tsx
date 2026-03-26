@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -9,40 +10,34 @@ export const metadata: Metadata = {
 
 const learningCentres = [
   {
-    icon: "🎬",
+    icon: "/images/learning-centres/audiovisual-theatre.png",
     name: "Audiovisual Theatre",
     description:
       "A dedicated screening room where children learn through educational films, animations, and interactive presentations that bring lessons to life.",
   },
   {
-    icon: "🎨",
+    icon: "/images/learning-centres/art-craft-centre.png",
     name: "Creative Art & Craft Centre",
     description:
       "A vibrant studio equipped with paints, clay, paper, and craft supplies where children explore their artistic side through guided and free creative expression.",
   },
   {
-    icon: "🤸",
-    name: "360° Fitness Studio",
+    icon: "/images/learning-centres/fitness-studio.png",
+    name: "360 Fitness Studio",
     description:
       "An indoor fitness space designed for young bodies — balancing beams, soft climbing structures, and age-appropriate exercise activities for physical development.",
   },
   {
-    icon: "🌱",
+    icon: "/images/learning-centres/organic-farming.png",
     name: "Organic Farming Zone",
     description:
       "A hands-on gardening area where children plant seeds, water plants, and learn about nature, sustainability, and where their food comes from.",
   },
   {
-    icon: "🎭",
+    icon: "/images/learning-centres/roleplay-amphitheatre.png",
     name: "Roleplay Area & Amphitheatre",
     description:
       "An imaginative space with costumes, props, and a mini stage where children act out stories, explore roles, and build confidence through dramatic play.",
-  },
-  {
-    icon: "📚",
-    name: "Library & Reading Corner",
-    description:
-      "A cosy, well-stocked reading nook with age-appropriate books, picture books, and storytelling materials that foster a love for reading from an early age.",
   },
 ];
 
@@ -116,7 +111,7 @@ export default function FacilitiesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-teal to-teal-dark py-16 sm:py-20">
+      <section className="bg-gradient-to-br from-purple to-purple-dark py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
             Our Facilities
@@ -131,7 +126,7 @@ export default function FacilitiesPage() {
       {/* Learning Centres */}
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-extrabold text-text sm:text-4xl">
+          <h2 className="text-center text-3xl font-extrabold text-purple-dark sm:text-4xl">
             Innovative Learning Centres
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-center text-text-light">
@@ -144,8 +139,14 @@ export default function FacilitiesPage() {
                 key={centre.name}
                 className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
               >
-                <span className="text-4xl">{centre.icon}</span>
-                <h3 className="mt-3 text-lg font-bold text-text">
+                <Image
+                  src={centre.icon}
+                  alt={centre.name}
+                  width={64}
+                  height={64}
+                  className="h-16 w-16"
+                />
+                <h3 className="mt-3 text-lg font-bold text-purple-dark">
                   {centre.name}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-text-light">
@@ -158,9 +159,9 @@ export default function FacilitiesPage() {
       </section>
 
       {/* Safety & Infrastructure */}
-      <section className="bg-warm-gray py-16 sm:py-20">
+      <section className="bg-cream py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-extrabold text-text sm:text-4xl">
+          <h2 className="text-center text-3xl font-extrabold text-purple-dark sm:text-4xl">
             Safety &amp; Infrastructure
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-center text-text-light">
@@ -173,11 +174,11 @@ export default function FacilitiesPage() {
                 key={feature.title}
                 className="flex gap-4 rounded-2xl bg-white p-5 shadow-sm"
               >
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-purple/10 text-purple">
                   {feature.icon}
                 </div>
                 <div>
-                  <h3 className="font-bold text-text">{feature.title}</h3>
+                  <h3 className="font-bold text-purple-dark">{feature.title}</h3>
                   <p className="mt-1 text-sm text-text-light">
                     {feature.description}
                   </p>
@@ -192,17 +193,17 @@ export default function FacilitiesPage() {
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-2xl font-extrabold text-text sm:text-3xl">
+            <h2 className="text-2xl font-extrabold text-purple-dark sm:text-3xl">
               And So Much More
             </h2>
             <div className="mt-8 grid gap-3 sm:grid-cols-2 text-left">
               {additionalFacilities.map((facility) => (
                 <div
                   key={facility}
-                  className="flex items-center gap-3 rounded-xl bg-warm-gray p-4"
+                  className="flex items-center gap-3 rounded-xl bg-cream p-4"
                 >
                   <svg
-                    className="h-5 w-5 shrink-0 text-teal"
+                    className="h-5 w-5 shrink-0 text-purple"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -214,7 +215,7 @@ export default function FacilitiesPage() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  <span className="text-sm font-medium text-text">
+                  <span className="text-sm font-medium text-purple-dark">
                     {facility}
                   </span>
                 </div>
@@ -227,16 +228,16 @@ export default function FacilitiesPage() {
       {/* CTA */}
       <section className="bg-gradient-to-r from-orange to-orange-light py-12 text-center">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
+          <h2 className="text-2xl font-extrabold text-purple-dark sm:text-3xl">
             Come See Our Facilities
           </h2>
-          <p className="mx-auto mt-3 max-w-md text-white/90">
+          <p className="mx-auto mt-3 max-w-md text-purple-dark/80">
             Schedule a tour and experience our learning centres and
             infrastructure first-hand.
           </p>
           <Link
             href="/contact"
-            className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-base font-bold text-orange transition-all hover:shadow-lg"
+            className="mt-6 inline-flex items-center justify-center rounded-full bg-purple px-7 py-3 text-base font-bold text-white transition-all hover:bg-purple-dark hover:shadow-lg"
           >
             Book a Visit
           </Link>
